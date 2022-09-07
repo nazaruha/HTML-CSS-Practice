@@ -1,47 +1,69 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr"> <!-- lang="en" (specifies that hte language of the page is English) -->
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"> <!-- Tells browser to encode multiple languages -->
     <title>Cat Photo App</title>
   </head>
   <body>
 
-    <h1>CarPhotoApp</h1>
-    <h2>Cat Photos</h2>
-    <p>Click here to view more <a href="https://www.pexels.com/search/cat/">cat photos</a></p>
-    <img src="images/cat_photo.jpg" alt="cat-img">
+    <h1>CatPhotoApp</h1>
+    <main>
 
-    <h1>Cat Lists</h1>
-    <h2>Things cats love:</h2>
-    <ul>
-      <li>cat nip</li>
-      <li>laser pointers</li>
-      <li>lasagna
-        <table>
-          <tr>
-            <td><img src="images/lasagna.jpg" alt="lasagna-img"></td>
-          </tr>
-          <tr>
-            <td>Cats <i>love</i> lasagna</td>
-          </tr>
-        </table>
-      </li>
-    </ul>
+        <section>
+          <h2>Cat Photos</h2>
+          <p>Click here to view more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>.</p> <!-- target="_blank" opens url in a new tab -->
+          <a href="https://freecatphotoapp.com" target="_blank"><img src="images/relaxing-cat.jpg" alt="A cute orange cat lying on its back"></a>
+        </section>
 
-    <h2>Top 3 things cats hate:</h2>
-    <ol>
-      <li>flea treatment</li>
-      <li>thunder</li>
-      <li>other cats
-        <table>
-          <tr>
-            <td><img src="images/citties.jpg" alt="citties-img"></td>
-          </tr>
-          <tr>
-            <td>Cats <b>hate</b> other cats</td>
-          </tr>
-        </table>
-      </li>
-    </ol>
+        <section>
+          <h2>Cat Lists</h2>
+          <h3>Things cats love:</h3>
+          <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+          </ul>
+          <figure>
+            <img src="images/lasagna.jpg" alt="lasagna-img">
+            <figcaption>Cats <em>love</em> lasagna</figcaption>
+          </figure>
+          <h3>Top 3 things cats hate:</h3>
+          <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+          </ol>
+          <figure>
+            <img src="images/citties.jpg" alt="Five cats looking around a field.">
+            <figcaption>Cats <b>hate</b> other cats</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h2>Cat Form</h2>
+          <form class="" action="https://freecatphotoapp.com/submit-cat-photo" method="post">
+              <fieldset>
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                <label><input type="radio" id="indoor" value="indoor" name="indoor-outdoor" checked> Indoor</label> <!-- inside label makes rb word clickble too -->
+                <label><input type="radio" id="outdoor" value="outdoor" name="indoor-outdoor">Outdoor</label>
+              </fieldset>
+              <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <input id="loving" type="checkbox" name="personality" value="loving" checked><label for="loving">Loving</label> <!-- name="personality" (makes for server process this if checkbox isn't chosen) -->
+                <input id="lazy"type="checkbox" name="personality" value="lazy"><label for="lazy">Lazy</label>
+                <input id="energetic" type="checkbox" name="personality" value="energetic"><label for="energetic">Energetic</label>
+              </fieldset>
+              <input type="text" name="cat_photo_url" placeholder="cat photo URL" required> <!-- placeholder (gives people a hint about what kind of info to enter into an input)
+                                                                                                 required (tells that user must to fill this input)-->
+              <button type="submit" name="button">Submit</button>
+              <button type="reset" name="button">Reset</button>
+          </form>
+        </section>
+
+    </main>
+    <footer>
+      <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+
   </body>
 </html>
