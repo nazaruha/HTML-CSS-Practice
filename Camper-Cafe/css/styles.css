@@ -9,4 +9,19 @@ h1, h2, p {
   width: 50%;
   background-color: burlywood;
   margin: auto;
+  padding: 20px;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+.item p { /*style of paragraphs in class "item"*/
+  display: inline-block;
 }
