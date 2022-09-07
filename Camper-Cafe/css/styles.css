@@ -1,14 +1,47 @@
 body {
   background-image: url("../images/coffee-seeds.jpg");
+  font-family: sans-serif;
+  padding: 20px;
 }
+
 h1, h2, p {
   text-align: center;
 }
 
+h1, h2 {
+  font-family: Impact, serif; /*serif font is a fallback(запасний)*/
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+hr {
+  background-color: brown;
+  border-color: brown;
+  height: 2px;
+}
+
+img {
+  display: block;
+  margin: -23px auto auto auto;
+}
+
+.established {
+  font-style: italic;
+}
+
 .menu {
-  width: 50%;
+  width: 43%;
   background-color: burlywood;
   margin: auto;
+  max-width: 50%;
   padding: 20px;
 }
 
@@ -24,4 +57,35 @@ h1, h2, p {
 
 .item p { /*style of paragraphs in class "item"*/
   display: inline-block;
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+/*FOOTER*/
+footer {
+  font-size: 14px;
+}
+
+a {
+  color: black;
+}
+
+a:visited { /*when linked has been visited*/
+  color: black
+}
+
+a:hover { /*when your mouse is on it*/
+  color: brown;
+}
+
+a:active { /*when your mouse in this 'a'*/
+  color: brown;
 }
