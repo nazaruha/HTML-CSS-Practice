@@ -1,3 +1,12 @@
+body {
+  background-image: url("../images/coffee-seeds.jpg");
+}
 h1, h2, p {
   text-align: center;
+}
+
+.menu {
+  width: 50%;
+  background-color: burlywood;
+  margin: auto;
 }
