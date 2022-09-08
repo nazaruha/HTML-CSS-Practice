@@ -1,1 +1,1 @@
-Increasing my html and css skills
+Increasing my front-end skills
