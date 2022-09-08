@@ -2,20 +2,63 @@ h1 {
   text-align: center;
 }
 
+.container {
+    background-color: rgb(255, 255, 255); /*primary color*/
+    padding: 10px 0;
+}
+
 .marker {
   width: 200px;
   height: 25px;
   margin: 10px auto;
 }
 
-.one {
-  background-color: red;
+.red {
+  background: linear-gradient(rgb(122, 74, 14) 0%/*how much space it takes. Automaticaly place 180deg*/, rgb(245, 62, 113), rgb(162, 27, 27)); /*creates gradient (degree, first color, second color, can be the third color)*/
+  /*background-color: rgb(255, 0, 0);*/ /* 1. pure red + pure green + pure blue = white (primary colors (when all is max))
+  2. pure red + pure green = yellow (secondary colors (when max + max))
+  3. pure red + 127 of green = orange (tertiary colors (when 1max + half of another))
+  4. 127 of red + pure green = chartreuse green (tertiary color)*/
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
 }
 
-.two {
-  background-color: green;
+.green {
+  background: linear-gradient(/*180deg,*/ #55680D, #71F53E, #116C31);
+  /*background-color: #007F00;*/
+  /*background-color: rgb(0, 255, 0)*/ /* 1. pure green + pure blue = cyan
+  2. pure green + 127 of blue = spring green (tertiary color)
+  3. 127 of green + pure blue = azure (tertiary color)*/;
+  box-shadow: 0 0 20px 0 #3B7E20CC/*CC - opacity*/; /*offsetX offsetY blurRadius spreadRadius Color*/
 }
 
-.three {
-  background-color: blue;
+.blue {
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  /*background-color: hsl(240, 100%, 50%);*/
+  /*background-color: rgb(0, 0, 255);*/ /* 1. pure blue + pure red = magenta
+  2. 127 of red + pure blue = violet (tertiary color)
+  3. pure red + 127 of blue = rose (tertiary color)*/
+  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+
+.sleeve {
+  background-color: white;
+  height: 25px;
+  width: 110px;
+  /*opacity: 0.5;*/ /*adds opacity*/
+  background-color: rgba(255, 255, 255, 50%); /*rgb + opacity in one func*/
+
+  /*Instead of these three funcs
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-left-color: black;*/
+  border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+.cap {
+  width: 60px;
+  height: 25px;
+}
+
+.cap, .sleeve {
+  display: inline-block;
 }
