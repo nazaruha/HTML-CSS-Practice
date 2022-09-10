@@ -1,6 +1,6 @@
 body {
-  background: url("../images/working-team.jpg") no-repeat;
-  background-size: cover;
+  background: url("../images/working-team.jpg") no-repeat; /*photo isn't gonna repeat if web become bigger*/
+  background-size: cover; /*photo cover whole page*/
   margin: 0;
   color: white;
   font-family: 'Montserrat', sans-serif;
