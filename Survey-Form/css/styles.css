@@ -1,0 +1,84 @@
+body {
+  background: url("../images/working-team.jpg") no-repeat;
+  background-size: cover;
+  margin: 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+  font-weight: 600;
+  margin: 0 auto;
+  opacity: 100%;
+}
+
+#description {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-container {
+  background-color: rgba(160,132,202,80%);
+  height: 197.2vh;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.inherit-container {
+  background-color: rgba(101,93,170,80%);
+  width: 50%;
+  margin: auto;
+  border-radius: 5px 5px 0px 0px;
+  text-align: left;
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.clue {
+  font-size: 15px;
+}
+
+label, p {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+input, select {
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+  color: gray;
+  padding: 1px;
+  border: 1px;
+}
+
+textarea {
+    border: 1px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 1rem;
+    width: 100vh;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.input-radio, .input-checkbox {
+  width: 20px;
+  height: 15px;
+  margin: 0 0.5em 0 0;
+}
+
+.button {
+  border-radius: 0px;
+  color: white;
+  background-color: #37af65;
+  margin-top: 30px;
+}
