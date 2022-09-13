@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  display: inline;
+}
+
+.frame {
+  background-color: #16213E;
+  border-bottom: 4px solid orange;
+  height: 180px;
+  text-align: center;
+  width: 100%;
+}
+
+.heading {
+    margin: 0 auto;
+    padding: 45px;
+    position: relative;
+    color: white;
+    font-size: 30px;
+}
+
+.photos {
+  padding: 15px 100px;
+}
+
+.photo {
+  display: inline-block;
+  margin: 15px 50px;
+}
+
+img {
+  border-radius: 20px;
+}
